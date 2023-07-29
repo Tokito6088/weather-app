@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript weather app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="weather-header">
+                <input type="text" id="input" placeholder="enter your city name...">
+                <button class="fa-solid fa-magnifying-glass" id="btn"></button>
+            </div>
+        </div>
+
+        <div class="body">
+            <div id="body" class="weather-body">
+                <img src="assets/cloud.png">
+                <p class="temperature">0°C</p>
+                <p class="description">light rain</p>
+
+                <div class="weather-detail">
+                    <div class="rain">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div class="text">
+                            <p class="rain-per">45%</p>
+                            <p>humidity</p>
+                        </div>
+
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text">
+                            <p class="wind-per">1KM/H</p>
+                            <p>wind speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 id="err">City Not Found ! </h3>
+
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

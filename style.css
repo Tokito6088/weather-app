@@ -1,0 +1,115 @@
+@font-face {
+	font-family: poppins;
+	src: url(Poppins-Regular.ttf);
+}
+
+* {
+	font-family: poppins;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	text-transform: capitalize;
+}
+body {
+	min-height: 100vh;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	width: 400px;
+	background-color: rgb(255, 255, 255);
+	padding: 20px 25px;
+	margin: 0 10px;
+	border-radius: 10px;
+}
+.weather-body img {
+	width: 80%;
+}
+
+.weather-header {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	width: 100%;
+}
+.weather-header input {
+	width: 100%;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: #000;
+	padding-bottom: 0;
+}
+.weather-header input:focus {
+	border-bottom: 1px solid #999;
+}
+input::placeholder {
+	color: #000;
+}
+.weather-header button {
+	height: 100%;
+	border-radius: 50%;
+	background-color: transparent;
+	width: 50px;
+	cursor: pointer;
+}
+.weather-header button:hover {
+	color: #fff;
+	background-color: #9d9d9d;
+	transition: 0.2s;
+}
+
+.weather-body {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.weather-detail {
+	margin: 20px 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 17px;
+}
+.weather-detail .rain-per,
+.wind-per {
+	font-size: 20px;
+}
+.temperature,
+.description {
+	font-weight: 700;
+}
+.temperature {
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.wind,
+.rain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.weather-detail i {
+	font-size: 25px;
+}
+
+.text {
+	margin: 0 10px;
+}
+h3 {
+	margin-top: 20px;
+	text-align: center;
+}
+#err {
+	display: none;
+}
